@@ -16,18 +16,13 @@ jobs:
               run: echo "Hello World"
               
     second-job:
-    # روی چه سیستم عاملی اجرا شود
         runs-on: ubuntu-latest
-
-        #مشخص کردن استپ ها 
         steps:
+             - name: Print Hi to you
+               run: echo "Hi to you" 
 
-            - name: Print Hi to you 
-              run: echo " Hi to you "
+             - name: I will suc.
+               run: exit 1
 
-            - name: I will fail 
-              run: exit 1
-
-            - name: say goodbay
-              run: "say goodbay"
-              
+             - name: Say Goodbye
+               run: echo "Goodbye"        
