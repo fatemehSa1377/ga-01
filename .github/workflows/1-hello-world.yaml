@@ -1,0 +1,19 @@
+name: 1 - hello - world
+
+#triger
+on: workflow_dispatch 
+
+# در این قسمت جاب ها مشخص میشوند
+jobs:
+    # نام جاب اول
+    first-job:
+    # روی چه سیستم عاملی اجرا شود
+        runs-on: ubuntu-latest
+
+        #مشخص کردن استپ ها 
+        steps:
+            - name: Print hello 
+              run: echo "Hello World"
+
+            - name: Print goodbay 
+              run: echo "Hello goodbay"
