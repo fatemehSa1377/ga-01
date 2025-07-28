@@ -1,6 +1,6 @@
 name: 1 - hello - world
 
-#triger
+# trigger
 on: workflow_dispatch 
 
 # در این قسمت جاب ها مشخص میشوند
@@ -21,7 +21,7 @@ jobs:
              - name: Print Hi to you
                run: echo "Hi to you" 
 
-             - name: I will suc.
+             - name: I will fail.
                run: exit 1
 
              - name: Say Goodbye
